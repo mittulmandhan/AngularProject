@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardComponent } from './areas/admin/dashboard/dashboard.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { DashboardComponent } from './areas/admin/dashboard/dashboard.component'
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
