@@ -8,7 +8,7 @@ import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { DashboardComponent } from './areas/admin/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
