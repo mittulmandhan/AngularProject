@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent},
   {path: 'notfound', component: NotfoundComponent},
   {path: 'admin', loadChildren: () => import('./Areas/admin/admin.module').then(m => m.AdminModule)},
+  {path: 'user', loadChildren: () => import('./Areas/user/user.module').then(m => m.UserModule)},
   {path: '**', redirectTo: 'notfound'},
 ];
 
