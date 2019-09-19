@@ -5,12 +5,14 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LayoutComponent } from './shared/layout/layout.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [ // eager loading
       {path: '', component: HomeComponent},
       {path: 'login', component: LoginComponent},
+      {path: 'logout', component: LogoutComponent},
       {path: 'signup', component: SignupComponent},
       {path: 'notfound', component: NotfoundComponent},
     ]
