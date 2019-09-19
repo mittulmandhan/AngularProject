@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -10,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardComponent } from './areas/admin/dashboard/dashboard.component';
 import { AuthService } from './services/auth.service';
+import { LayoutComponent } from './shared/layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { AuthService } from './services/auth.service';
     LoginComponent,
     SignupComponent,
     NotfoundComponent,
-    DashboardComponent
+    DashboardComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

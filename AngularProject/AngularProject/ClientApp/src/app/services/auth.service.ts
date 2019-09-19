@@ -28,6 +28,6 @@ export class AuthService {
 
     ValidateUser(model: Login ): Observable<UserModel> {
         // tslint:disable-next-line:max-line-length
-        return this.httpClient.post<UserModel>(environment.apiAddress + '/auth/ValidateUser', JSON.stringify(model), {headers: this.headers, observe: 'body'});
+        return this.httpClient.post<UserModel>(environment.apiAddress + '/auth/ValidateUser', JSON.stringify(model), {headers: this.headers});
     }
 }
