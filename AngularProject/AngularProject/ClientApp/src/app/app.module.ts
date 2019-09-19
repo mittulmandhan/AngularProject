@@ -12,6 +12,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardComponent } from './areas/admin/dashboard/dashboard.component';
 import { AuthService } from './services/auth.service';
 import { LayoutComponent } from './shared/layout/layout.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { LayoutComponent } from './shared/layout/layout.component';
     NotfoundComponent,
     DashboardComponent,
     LayoutComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
