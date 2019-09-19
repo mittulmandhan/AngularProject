@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../../services/auth.service';
+import { UserModel } from 'src/app/models/user';
 
 @Component({
   selector: 'app-adminlayout',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class AdminLayoutComponent implements OnInit {
-
-  constructor() { }
+  user: UserModel;
+  constructor(private authService: AuthService) {
+    this.user = this.authService.getUserDetails();
+  }
 
   ngOnInit() {
   }
