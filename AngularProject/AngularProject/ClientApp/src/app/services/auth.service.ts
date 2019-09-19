@@ -30,4 +30,13 @@ export class AuthService {
         // tslint:disable-next-line:max-line-length
         return this.httpClient.post<UserModel>(environment.apiAddress + '/auth/ValidateUser', JSON.stringify(model), {headers: this.headers});
     }
+    getUserDetails(): UserModel {
+        const data = sessionStorage.getItem('user');
+        if (data !== undefined && data != null) {
+            const user: UserModel = JSON.parse(data);
+            return user;
+        } else {
+            return null;
+        }
+    }
 }

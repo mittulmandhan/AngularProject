@@ -28,9 +28,9 @@ login: Login;
         const data = JSON.stringify(user);
         sessionStorage.setItem('user', data);
         if (user.Roles.indexOf('Admin') > -1) {
-          this.router.navigate(['/admin']);
+          return this.router.navigate(['/admin']);
         } else if (user.Roles.indexOf('User') > -1) {
-          this.router.navigate(['/user']);
+          return this.router.navigate(['/user']);
         }
       }
     });
