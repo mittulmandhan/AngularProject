@@ -39,4 +39,7 @@ export class AuthService {
             return null;
         }
     }
+    clearUserDetails() {
+        sessionStorage.removeItem('user');
+    }
 }
