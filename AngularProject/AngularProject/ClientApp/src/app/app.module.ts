@@ -22,7 +22,7 @@ import { LayoutComponent } from './shared/layout/layout.component';
     SignupComponent,
     NotfoundComponent,
     DashboardComponent,
-    LayoutComponent
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
