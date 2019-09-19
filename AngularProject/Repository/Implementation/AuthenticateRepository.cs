@@ -33,11 +33,10 @@ namespace BAL.Implementation
                 UserModel user = new UserModel();
 
                 user.UserId = data.UserId;
-                user.Password = data.Password;
                 user.Name = data.Name;
-                user.ContactNo = data.ContactNo;
                 user.Roles = data.Roles.Select(r => r.Name).ToArray();
                 user.Username = data.Username;
+                user.Token = data.Username + ":" + data.Password;
                 return user;
             }
             else

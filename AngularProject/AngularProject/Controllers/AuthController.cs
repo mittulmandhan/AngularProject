@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace AngularProject.Controllers
 {
@@ -14,13 +15,13 @@ namespace AngularProject.Controllers
     {
         public AuthController(IUnitOfWork _uow) : base(_uow)
         {
-
+            uow = new UnitOfWork();
         }
 
         [HttpPost]
-        public UserModel ValidateUser(string Username, string Password)
+        public UserModel ValidateUser(LoginModel model)
         {
-            return uow.AuthenticateRepo.ValidateUser(Username, Password);
+            return uow.AuthenticateRepo.ValidateUser(model.Username, model.Password);
         }
 
         [HttpPost]
@@ -32,8 +33,9 @@ namespace AngularProject.Controllers
                 user.Name = model.Name;
                 user.Password = model.Password;
                 user.Username = model.Username;
-                user.ContactNo = model.ContactNo;
                 user.CreatedDate = DateTime.Now;
+                user.ContactNo = model.ContactNo;
+                user.Address = model.Address;
 
                 Role r1 = uow.AuthenticateRepo.FindRole("User");
                 user.Roles.Add(r1);
@@ -45,7 +47,7 @@ namespace AngularProject.Controllers
             {
                 return InternalServerError();
             }
-            
+
         }
     }
 }

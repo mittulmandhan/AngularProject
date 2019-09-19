@@ -11,6 +11,8 @@ namespace AngularProject.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            //var result = new FilePathResult("~/index.html", "text/html");
+            //return result;
             return View();
         }
     }
