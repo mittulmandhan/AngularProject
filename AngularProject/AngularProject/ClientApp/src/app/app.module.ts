@@ -16,6 +16,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { ProductService } from './services/product.service';
 import { UserAuthGuard, AdminAuthGuard } from './shared/auth.gaurd';
 import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
+import { StoreComponent } from './store/store.component';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
     LayoutComponent,
     LogoutComponent,
     UnauthorizeComponent,
+    StoreComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,7 @@ import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService, ProductService, UserAuthGuard, AdminAuthGuard],
+  providers: [AuthService, ProductService, UserAuthGuard, AdminAuthGuard, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
