@@ -15,6 +15,7 @@ import { LayoutComponent } from './shared/layout/layout.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ProductService } from './services/product.service';
 import { UserAuthGuard, AdminAuthGuard } from './shared/auth.gaurd';
+import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { UserAuthGuard, AdminAuthGuard } from './shared/auth.gaurd';
     DashboardComponent,
     LayoutComponent,
     LogoutComponent,
+    UnauthorizeComponent,
   ],
   imports: [
     BrowserModule,
