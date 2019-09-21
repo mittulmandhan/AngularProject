@@ -15,7 +15,7 @@ const routes: Routes = [
       {path: 'login', component: LoginComponent},
       {path: 'logout', component: LogoutComponent},
       {path: 'signup', component: SignupComponent},
-      {path: 'notfound', component: NotfoundComponent},
+      {path: 'notfound', component: NotfoundComponent}
     ]
   },
   // In canActive option just mention the service(s) you are using authentication gaurd
