@@ -7,6 +7,7 @@ import { UserModel } from '../models/user';
 
 @Injectable({providedIn: 'root'})
 export class AuthService {
+    user: UserModel;
     headers: HttpHeaders;
     constructor(private httpClient: HttpClient) {
         this.headers = new HttpHeaders({'content-type:': 'application/json'});

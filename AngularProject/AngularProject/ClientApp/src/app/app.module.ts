@@ -13,6 +13,8 @@ import { DashboardComponent } from './areas/admin/dashboard/dashboard.component'
 import { AuthService } from './services/auth.service';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ProductService } from './services/product.service';
+import { UserAuthGuard, AdminAuthGuard } from './shared/auth.gaurd';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,7 @@ import { LogoutComponent } from './logout/logout.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, ProductService, UserAuthGuard, AdminAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
