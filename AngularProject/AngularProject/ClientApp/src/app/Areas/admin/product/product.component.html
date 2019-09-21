@@ -1,0 +1,26 @@
+<h2>Create</h2>
+<hr>
+<form #form="ngForm" (ngSubmit)="SaveData(form)">
+    <div class="form-group">
+        <label for="CategoryId">Category</label>
+        <input type="number" class="form-control" id="CategoryId" name="CategoryId" #ProductId="ngModel" [(ngModel)]="product.CategoryId" />
+    </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" #Name="ngModel" [(ngModel)]="product.Name" />
+    </div>
+    <div class="form-group">
+        <label for="Description">Description</label>
+        <input type="text" class="form-control" id="Description" name="Description" #Description="ngModel" [(ngModel)]="product.Description" />
+    </div>
+    <div class="form-group">
+        <label for="UnitPrice">Unit Price</label>
+        <input type="text" class="form-control" id="UnitPrice" name="unitPrice" #UnitPrice="ngModel" [(ngModel)]="product.UnitPrice" />
+    </div>
+    <div class="form-group">
+        <input type="text" type="file" id="files" accept="image/*" name="files" (change)="handleFileChange($event)" />
+    </div>
+    <img [src]="imageUrl" [hidden]="!imageUrl" style="width:250px;height:200px">
+    <br>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
