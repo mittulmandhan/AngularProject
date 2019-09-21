@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class UserLayoutComponent implements OnInit {
   user: UserModel;
   constructor(private authService: AuthService, private router: Router) {
-    this.user = this.authService.getUserDetails();
+    this.user = this.authService.user;
   }
 
   ngOnInit() {
