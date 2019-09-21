@@ -7,6 +7,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminAuthGuard, UserAuthGuard } from './shared/auth.gaurd';
+import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
 
 const routes: Routes = [
   {
@@ -15,7 +16,8 @@ const routes: Routes = [
       {path: 'login', component: LoginComponent},
       {path: 'logout', component: LogoutComponent},
       {path: 'signup', component: SignupComponent},
-      {path: 'notfound', component: NotfoundComponent}
+      {path: 'notfound', component: NotfoundComponent},
+      { path: 'unauthorize', component: UnauthorizeComponent }
     ]
   },
   // In canActive option just mention the service(s) you are using authentication gaurd
