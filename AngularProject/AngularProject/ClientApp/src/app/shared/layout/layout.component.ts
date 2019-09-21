@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { UserModel } from 'src/app/models/user';
 import { Router } from '@angular/router';
+import { CartService } from '../../services/cart.service';
+import { Cart } from 'src/app/models/cart';
 
 @Component({
   selector: 'app-layout',
@@ -10,8 +12,10 @@ import { Router } from '@angular/router';
 })
 export class LayoutComponent implements OnInit {
   user: UserModel;
-  constructor(private authService: AuthService, private router: Router) {
+  cart: Cart;
+  constructor(private authService: AuthService, private router: Router, private cartService: CartService) {
     this.user = this.authService.user;
+    this.cart =  this.cartService.getCart();
   }
 
   ngOnInit() {
