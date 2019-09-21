@@ -8,11 +8,14 @@ import { LayoutComponent } from './shared/layout/layout.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminAuthGuard, UserAuthGuard } from './shared/auth.gaurd';
 import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
+import { StoreComponent } from './store/store.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [ // eager loading
-      {path: '', component: HomeComponent},
+      {path: '', component: StoreComponent},
+      {path: 'cart', component: CartComponent},
       {path: 'login', component: LoginComponent},
       {path: 'logout', component: LogoutComponent},
       {path: 'signup', component: SignupComponent},
