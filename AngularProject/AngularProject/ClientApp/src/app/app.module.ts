@@ -18,6 +18,7 @@ import { UserAuthGuard, AdminAuthGuard } from './shared/auth.gaurd';
 import { UnauthorizeComponent } from './unauthorize/unauthorize.component';
 import { StoreComponent } from './store/store.component';
 import { CartService } from './services/cart.service';
+import { StoreService } from './services/store.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { CartService } from './services/cart.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService, ProductService, UserAuthGuard, AdminAuthGuard, CartService],
+  providers: [AuthService, ProductService, UserAuthGuard, AdminAuthGuard, CartService, StoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
