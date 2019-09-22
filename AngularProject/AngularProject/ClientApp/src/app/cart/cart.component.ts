@@ -19,7 +19,7 @@ cart: Cart;
   ngOnInit() {
     this.cart = this.cartService.getCart();
   }
-  chekout() {
+  checkout() {
     if (this.authService.user.UserId) {
       this.cart.UserId = this.authService.user.UserId;
       this.storeService.SaveCart(this.cart).subscribe(res => {
