@@ -3,7 +3,7 @@
 <hr />
 <div class="row">
     <div class="col-sm-8">
-        <div [hidden]="!cart.Items.length == 0">
+        <div [hidden]="!(cart.Items.length == 0)">
             Your cart is empty!
         </div>
         <table class="table table-bordered" *ngIf="cart.Items.length>0">
