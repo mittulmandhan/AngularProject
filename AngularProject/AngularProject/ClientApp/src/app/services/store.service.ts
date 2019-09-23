@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Product } from '../models/product';
 import { environment } from '../../environments/environment';
 import { AuthService } from './auth.service';
+import { UserModel } from '../models/user';
 
 @Injectable()
 export class StoreService {
@@ -15,7 +16,7 @@ export class StoreService {
     }
 
     GetProducts(): Observable<Product[]> {
-        return this.httpClient.get<Product[]>(environment.apiAddress + '/store', { headers: this.headers });
+        return this.httpClient.get<Product[]>(environment.apiAddress + '/store/getproducts');
     }
 
     SaveCart(cart: any): Observable<any> {
