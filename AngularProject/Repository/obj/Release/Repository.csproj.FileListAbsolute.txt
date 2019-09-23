@@ -16,3 +16,21 @@ C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\Repository\obj\Release
 C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\Repository\obj\Release\Repository.csproj.CopyComplete
 C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\Repository\obj\Release\Repository.dll
 C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\Repository\obj\Release\Repository.pdb
+C:\Code\Weekend\AngularProject\Repository\bin\Release\Repository.dll.config
+C:\Code\Weekend\AngularProject\Repository\bin\Release\Repository.dll
+C:\Code\Weekend\AngularProject\Repository\bin\Release\Repository.pdb
+C:\Code\Weekend\AngularProject\Repository\bin\Release\ApplicationCore.dll
+C:\Code\Weekend\AngularProject\Repository\bin\Release\DomainModels.dll
+C:\Code\Weekend\AngularProject\Repository\bin\Release\EntityFramework.dll
+C:\Code\Weekend\AngularProject\Repository\bin\Release\EntityFramework.SqlServer.dll
+C:\Code\Weekend\AngularProject\Repository\bin\Release\ApplicationCore.pdb
+C:\Code\Weekend\AngularProject\Repository\bin\Release\ApplicationCore.dll.config
+C:\Code\Weekend\AngularProject\Repository\bin\Release\DomainModels.pdb
+C:\Code\Weekend\AngularProject\Repository\bin\Release\DomainModels.dll.config
+C:\Code\Weekend\AngularProject\Repository\bin\Release\EntityFramework.xml
+C:\Code\Weekend\AngularProject\Repository\bin\Release\EntityFramework.SqlServer.xml
+C:\Code\Weekend\AngularProject\Repository\obj\Release\Repository.csprojAssemblyReference.cache
+C:\Code\Weekend\AngularProject\Repository\obj\Release\Repository.csproj.CoreCompileInputs.cache
+C:\Code\Weekend\AngularProject\Repository\obj\Release\Repository.csproj.CopyComplete
+C:\Code\Weekend\AngularProject\Repository\obj\Release\Repository.dll
+C:\Code\Weekend\AngularProject\Repository\obj\Release\Repository.pdb

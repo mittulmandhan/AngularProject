@@ -83,3 +83,4 @@ C:\Code\Weekend\AngularProject\AngularProject\bin\Unity.Container.pdb
 C:\Code\Weekend\AngularProject\AngularProject\bin\System.Web.Cors.dll
 C:\Code\Weekend\AngularProject\AngularProject\bin\System.Web.Http.Cors.dll
 C:\Code\Weekend\AngularProject\AngularProject\bin\System.Web.Http.Cors.xml
+C:\Code\Weekend\AngularProject\AngularProject\bin\Unity.Mvc5.dll

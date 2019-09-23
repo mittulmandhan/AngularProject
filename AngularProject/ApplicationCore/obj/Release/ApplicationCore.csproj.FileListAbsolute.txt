@@ -15,3 +15,20 @@ C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\ApplicationCore\obj\Re
 C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\ApplicationCore\obj\Release\ApplicationCore.csproj.CopyComplete
 C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\ApplicationCore\obj\Release\ApplicationCore.dll
 C:\Users\Shailendra Chauhan\Desktop\Code\WeekDays\MVCSite\ApplicationCore\obj\Release\ApplicationCore.pdb
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\ApplicationCore.dll.config
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\ApplicationCore.dll
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\ApplicationCore.pdb
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\DomainModels.dll
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\EntityFramework.dll
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\EntityFramework.SqlServer.dll
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\DomainModels.pdb
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\DomainModels.dll.config
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\EntityFramework.xml
+C:\Code\Weekend\AngularProject\ApplicationCore\bin\Release\EntityFramework.SqlServer.xml
+C:\Code\Weekend\AngularProject\ApplicationCore\obj\Release\ApplicationCore.csprojAssemblyReference.cache
+C:\Code\Weekend\AngularProject\ApplicationCore\obj\Release\ApplicationCore.Migrations.initial.resources
+C:\Code\Weekend\AngularProject\ApplicationCore\obj\Release\ApplicationCore.csproj.GenerateResource.cache
+C:\Code\Weekend\AngularProject\ApplicationCore\obj\Release\ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Code\Weekend\AngularProject\ApplicationCore\obj\Release\ApplicationCore.csproj.CopyComplete
+C:\Code\Weekend\AngularProject\ApplicationCore\obj\Release\ApplicationCore.dll
+C:\Code\Weekend\AngularProject\ApplicationCore\obj\Release\ApplicationCore.pdb

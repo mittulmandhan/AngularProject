@@ -36,7 +36,10 @@ namespace BAL.Implementation
                 user.Name = data.Name;
                 user.Roles = data.Roles.Select(r => r.Name).ToArray();
                 user.Username = data.Username;
-                user.Token = data.Username + ":" + data.Password;
+
+                var plainTextBytes = Encoding.UTF8.GetBytes(data.Username + ":" + data.Password);
+                user.Token = Convert.ToBase64String(plainTextBytes);
+
                 return user;
             }
             else

@@ -10,6 +10,11 @@ namespace AngularProject
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings
+    .ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            GlobalConfiguration.Configuration.Formatters
+                .Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
+
             config.EnableCors();
             // Web API routes
             config.MapHttpAttributeRoutes();

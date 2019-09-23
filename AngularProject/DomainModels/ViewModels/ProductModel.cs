@@ -12,6 +12,6 @@ namespace DomainModels.Models
     [NotMapped]
     public class ProductModel : Product
     {
-        public HttpPostedFileBase file { get; set; }
+        public HttpPostedFileBase File { get; set; }
     }
 }
